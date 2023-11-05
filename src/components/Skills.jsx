@@ -7,18 +7,22 @@ import ReactImg from "../assets/react.png";
 import Tailwind from "../assets/tailwind.png";
 import ASPNET from "../assets/ASPNET.png";
 import RESTfull from "../assets/restfullapi.png";
+import { BGCOLOR, PRIMARY, ACCENT, SECUNDARY } from "../data/colors";
 
 const Skills = () => {
   return (
-    <div name="skills" className="w-full h-screen bg-[#0a192f] text-gray-300">
+    <div name="skills" className={`w-full h-screen bg-[${BGCOLOR}] text-white`}>
       {/* container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
-          <p className="text-4xl font-bold inline border-b-4 border-red-500 ">
+          <p
+            className={`text-4xl font-bold inline border-b-4 border-[${ACCENT}]`}
+          >
             Skills
           </p>
-          <p className="py-4">
-            // this are the technologies in experience with
+          <p className="sm:text-xl py-4">
+            <span className={`text-[${SECUNDARY}]`}>//</span> this are the
+            technologies in experience with
           </p>
         </div>
 

@@ -6,6 +6,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { SiUpwork } from "react-icons/si";
 import CV from "../assets/CV/CurriculumDavidLora.pdf";
 import { Link } from "react-scroll";
+import { BGCOLOR, PRIMARY, ACCENT, SECUNDARY } from "../data/colors";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -14,36 +15,38 @@ const NavBar = () => {
   };
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-cyan-700  text-gray-200">
+    <div
+      className={`fixed w-full h-[80px] border-b-2 border-[#1C1E4D] flex justify-between items-center px-4 text-white bg-[${BGCOLOR}]`}
+    >
       <div>
         <img src={logo} alt="Logo David Lora" style={{ width: "110px" }} />
       </div>
 
       {/* menu */}
 
-      <ul className="hidden md:flex">
-        <li>
-          <Link to="home" smooth={true} offset={50} duration={500}>
+      <ul className="hidden md:flex text-2xl">
+        <li className="hover:scale-110  hover:underline">
+          <Link to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li>
-          <Link to="about" smooth={true} offset={50} duration={500}>
+        <li className="hover:scale-110 hover:underline">
+          <Link to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li>
-          <Link to="skills" smooth={true} offset={50} duration={500}>
+        <li className="hover:scale-110 hover:underline">
+          <Link to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li>
-          <Link to="work" smooth={true} offset={50} duration={500}>
+        <li className="hover:scale-110 hover:underline">
+          <Link to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
-        <li>
-          <Link to="contact" smooth={true} offset={50} duration={500}>
+        <li className="hover:scale-110 hover:underline">
+          <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>
         </li>
@@ -53,70 +56,42 @@ const NavBar = () => {
       <div onClick={handleClick} className="md:hidden z-10 cursor-pointer">
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
+
       {/* mobile menu */}
       <ul
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-cyan-700 flex flex-col justify-center items-center "
+            : `absolute top-0 left-0 w-full h-screen bg-[${BGCOLOR}] flex flex-col justify-center items-center`
         }
       >
         <li className="py-6 text-4xl ">
-          <Link
-            to="home"
-            smooth={true}
-            offset={50}
-            duration={500}
-            onClick={handleClick}
-          >
+          <Link to="home" smooth={true} duration={500} onClick={handleClick}>
             Home
           </Link>
         </li>
         <li className="py-6 text-4xl ">
-          <Link
-            to="about"
-            smooth={true}
-            offset={50}
-            duration={500}
-            onClick={handleClick}
-          >
+          <Link to="about" smooth={true} duration={500} onClick={handleClick}>
             About
           </Link>
         </li>
         <li className="py-6 text-4xl ">
-          <Link
-            to="skills"
-            smooth={true}
-            offset={50}
-            duration={500}
-            onClick={handleClick}
-          >
+          <Link to="skills" smooth={true} duration={500} onClick={handleClick}>
             Skills
           </Link>
         </li>
         <li className="py-6 text-4xl ">
-          <Link
-            to="work"
-            smooth={true}
-            offset={50}
-            duration={500}
-            onClick={handleClick}
-          >
+          <Link to="work" smooth={true} duration={500} onClick={handleClick}>
             Work
           </Link>
         </li>
         <li className="py-6 text-4xl ">
-          <Link
-            to="contact"
-            smooth={true}
-            offset={50}
-            duration={500}
-            onClick={handleClick}
-          >
+          <Link to="contact" smooth={true} duration={500} onClick={handleClick}>
             Contact
           </Link>
         </li>
       </ul>
+
       {/* Social icons */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
