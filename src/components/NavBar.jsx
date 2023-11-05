@@ -61,11 +61,61 @@ const NavBar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-cyan-700 flex flex-col justify-center items-center "
         }
       >
-        <li className="py-6 text-4xl ">Home</li>
-        <li className="py-6 text-4xl ">About</li>
-        <li className="py-6 text-4xl ">Skills</li>
-        <li className="py-6 text-4xl ">Work</li>
-        <li className="py-6 text-4xl ">Contact</li>
+        <li className="py-6 text-4xl ">
+          <Link
+            to="home"
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={handleClick}
+          >
+            Home
+          </Link>
+        </li>
+        <li className="py-6 text-4xl ">
+          <Link
+            to="about"
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={handleClick}
+          >
+            About
+          </Link>
+        </li>
+        <li className="py-6 text-4xl ">
+          <Link
+            to="skills"
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={handleClick}
+          >
+            Skills
+          </Link>
+        </li>
+        <li className="py-6 text-4xl ">
+          <Link
+            to="work"
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={handleClick}
+          >
+            Work
+          </Link>
+        </li>
+        <li className="py-6 text-4xl ">
+          <Link
+            to="contact"
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={handleClick}
+          >
+            Contact
+          </Link>
+        </li>
       </ul>
       {/* Social icons */}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
