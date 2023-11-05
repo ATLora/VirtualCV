@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className={`w-full h-screen bg-[${BGCOLOR}] flex justify-center items-center p-4`}
+      className={`w-full h-screen bg-[#22245D] flex justify-center items-center p-4`}
     >
       <form
         method="POST"
@@ -14,13 +14,13 @@ const Contact = () => {
       >
         <div className="pb-8">
           <p
-            className={`text-4xl font-bold inline border-b-4 border-[${ACCENT}] text-white`}
+            className={`text-4xl font-bold inline border-b-4 border-[#D02F2F] text-white`}
           >
             Contact
           </p>
           <p className="sm:text-xl text-white py-4">
-            <span className={`text-[${SECUNDARY}]`}>//</span> Submit the form
-            below or shoot me an email - lora.david2096@gmail.com
+            <span className={`text-[#6E1414]`}>//</span> Submit the form below
+            or shoot me an email - lora.david2096@gmail.com
           </p>
         </div>
         <input

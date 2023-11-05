@@ -8,20 +8,17 @@ const Work = () => {
   //setProject(data);
 
   return (
-    <div
-      name="work"
-      className={`w-full md:h-screen text-white bg-[${BGCOLOR}]`}
-    >
+    <div name="work" className={`w-full md:h-screen text-white bg-[#22245D]`}>
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p
-            className={`text-4xl font-bold inline border-b-4 border-[${ACCENT}]`}
+            className={`text-4xl font-bold inline border-b-4 border-[#D02F2F]`}
           >
             Work
           </p>
           <p className="sm:text-xl py-4">
-            <span className={`text-[${SECUNDARY}]`}>//</span> Check out some of
-            my recent work
+            <span className={`text-[#6E1414]`}>//</span> Check out some of my
+            recent work
           </p>
         </div>
 
