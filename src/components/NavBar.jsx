@@ -16,7 +16,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`fixed w-full h-[80px] border-b-2 border-[#1C1E4D] flex justify-between items-center px-4 text-white bg-[${BGCOLOR}]`}
+      className={`fixed w-full h-[80px] border-b-2 border-[#1C1E4D] flex justify-between items-center px-4 text-white bg-[#22245D]`}
     >
       <div>
         <img src={logo} alt="Logo David Lora" style={{ width: "110px" }} />
