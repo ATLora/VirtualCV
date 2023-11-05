@@ -16,10 +16,9 @@ function Home() {
         </h2>
         {/* Aqui va un resumen sobre mi que pondre despues */}
         <p className="text-[#8892b0] py-4 max-w-[700]">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-          voluptatem earum officia iure eum rerum, facilis odit consequatur
-          repudiandae non voluptate iusto expedita, minus enim porro repellendus
-          dolore temporibus quos!
+          I’m a full-stack developer specializing in building (and occasionally
+          designing) exceptional digital experiences. Currently, I’m focused on
+          building responsive full-stack web applications.
         </p>
         <div>
           <button className="group text-white border-2 border-white px-5 py-2 my-2 flex items-center hover:bg-red-500 hover:border-red-500 hover:scale-110">
