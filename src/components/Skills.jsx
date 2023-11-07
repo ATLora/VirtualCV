@@ -1,13 +1,6 @@
 import React from "react";
-import JavaScript from "../assets/javascript.png";
-import CSS from "../assets/css.png";
-import HTML from "../assets/html.png";
-import Node from "../assets/node.png";
-import ReactImg from "../assets/react.png";
-import Tailwind from "../assets/tailwind.png";
-import ASPNET from "../assets/ASPNET.png";
-import RESTfull from "../assets/restfullapi.png";
-import { BGCOLOR, PRIMARY, ACCENT, SECUNDARY } from "../data/colors";
+
+import { skills } from "../data/skills";
 
 const Skills = () => {
   return (
@@ -27,7 +20,24 @@ const Skills = () => {
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-center py-8">
-          <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+          {/*! Modify on Hover so it displays brief summary of the technologies */}
+
+          {skills.map((item) => {
+            return (
+              <div
+                key={item.id}
+                className="group shadow-md shadow-[#040c16] hover:scale-110 duration-500"
+              >
+                <img src={item.image} alt={item.alt} className="w-40 mx-auto" />
+                <p className="my-4">{item.name}</p>
+                <div className="hidden group-hover:block">
+                  <p>{item.mssg}</p>
+                </div>
+              </div>
+            );
+          })}
+
+          {/* <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img src={HTML} alt="HTML icon" className="w-20 mx-auto" />
             <p className="my-4">HTML</p>
           </div>
@@ -62,7 +72,7 @@ const Skills = () => {
           <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
             <img src={RESTfull} alt="RESTfull APIs" className="w-20 mx-auto" />
             <p className="my-4">RESTfull APIs</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
