@@ -9,10 +9,10 @@ const Work = () => {
 
   return (
     <div name="work" className={`w-full md:h-screen text-white bg-[#22245D]`}>
-      <div className="max-w-[1000px] mx-auto px-4 sm:pt-8 pt-16 flex flex-col justify-center w-full h-full">
+      <div className="max-w-[1000px] mx-auto px-4  flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p
-            className={`text-4xl font-bold inline border-b-4 border-[#D02F2F]`}
+            className={`sm:pt-8 pt-16 text-4xl font-bold inline border-b-4 border-[#D02F2F]`}
           >
             Work
           </p>
