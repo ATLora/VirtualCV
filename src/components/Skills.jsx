@@ -34,7 +34,7 @@ const Skills = () => {
                 <img src={item.image} alt={item.alt} className="w-20 mx-auto" />
                 <p className="my-4">{item.name}</p>
                 <div className="hidden group-hover:block">
-                  <p>{item.mssg}</p>
+                  <p className="pb-8">{item.mssg}</p>
                 </div>
               </div>
             );
