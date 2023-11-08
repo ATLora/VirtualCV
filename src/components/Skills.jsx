@@ -4,12 +4,9 @@ import { skills } from "../data/skills";
 
 const Skills = () => {
   return (
-    <div
-      name="skills"
-      className={`sm:py-4 py-35 w-full h-screen bg-[#22245D] text-white`}
-    >
+    <div name="skills" className={`w-full h-screen bg-[#22245D] text-white`}>
       {/* container */}
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+      <div className="max-w-[1000px] mx-auto py-25 px-4 flex flex-col justify-center w-full h-full">
         <div>
           <p
             className={`text-4xl font-bold inline border-b-4 border-[#D02F2F]`}
@@ -34,7 +31,7 @@ const Skills = () => {
                 <img src={item.image} alt={item.alt} className="w-20 mx-auto" />
                 <p className="my-4">{item.name}</p>
                 <div className="hidden group-hover:block">
-                  <p className="pb-8">{item.mssg}</p>
+                  <p>{item.mssg}</p>
                 </div>
               </div>
             );
