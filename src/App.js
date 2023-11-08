@@ -12,7 +12,9 @@ function App() {
       <NavBar />
       <Home />
       <About />
+      <div className="sm:h-[0px] h-[150px]  bg-[#22245D]"></div>
       <Skills />
+      <div className="sm:h-[0px] h-[150px] bg-[#22245D]"></div>
       <Work />
       <Contact />
     </div>
