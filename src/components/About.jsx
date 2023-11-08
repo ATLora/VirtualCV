@@ -1,6 +1,5 @@
 import React from "react";
 import profilepic from "../assets/ProfilePic.jpeg";
-import { BGCOLOR, PRIMARY, ACCENT, SECUNDARY } from "../data/colors";
 
 const About = () => {
   return (
@@ -25,7 +24,7 @@ const About = () => {
             />
           </div>
           <div>
-            <p className="sm:text-xl">
+            <p className="sm:text-xl pb-16">
               Hi, i'm David, I am passionate about building excellent software
               that improves the lives of those around me. I specialize in
               creating software for clients ranging from individuals and
