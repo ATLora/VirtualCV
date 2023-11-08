@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <div
       name="skills"
-      className={`sm:py-4 py-12 w-full h-screen bg-[#22245D] text-white`}
+      className={`sm:py-4 py-35 w-full h-screen bg-[#22245D] text-white`}
     >
       {/* container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
