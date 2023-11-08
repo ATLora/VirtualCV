@@ -4,7 +4,10 @@ import { skills } from "../data/skills";
 
 const Skills = () => {
   return (
-    <div name="skills" className={`w-full h-screen bg-[#22245D] text-white`}>
+    <div
+      name="skills"
+      className={`my-150 w-full h-screen bg-[#22245D] text-white`}
+    >
       {/* container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
