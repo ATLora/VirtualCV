@@ -22,7 +22,7 @@ function Home() {
         </p>
         <div>
           <button
-            className={`group text-white border-2 border-white px-5 py-2 my-2 flex items-center hover:bg-[#D02F2F] hover:border-[${ACCENT}] hover:scale-110 duration-300`}
+            className={`group text-white border-2 border-white px-5 py-2 my-2 flex items-center hover:bg-[#D02F2F] hover:border-[#D02F2F] hover:scale-110 duration-300`}
           >
             <Link to="work" smooth={true} offset={50} duration={500}>
               View Work

@@ -3,10 +3,7 @@ import profilepic from "../assets/ProfilePic.jpeg";
 
 const About = () => {
   return (
-    <div
-      name="about"
-      className={`pb-30 w-full h-screen bg-[#22245D] text-white`}
-    >
+    <div name="about" className={`w-full h-screen bg-[#22245D] text-white`}>
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">

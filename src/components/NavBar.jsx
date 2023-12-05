@@ -16,7 +16,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`fixed w-full h-[80px] border-b-2 border-[#1C1E4D] flex justify-between items-center px-4 text-white bg-[#22245D]`}
+      className={`fixed w-full h-[80px] border-b-2 border-[#1C1E4D] flex justify-between items-center px-4 text-white bg-[#22245D] shadow-md`}
     >
       <div>
         <img src={logo} alt="Logo David Lora" style={{ width: "110px" }} />
@@ -97,6 +97,7 @@ const NavBar = () => {
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-blue-800">
             <a
+              target="_blank"
               href="https://www.linkedin.com/in/david-lora-b1942622b/"
               className="flex justify-between items-center w-full text-gray-300"
             >
@@ -105,6 +106,7 @@ const NavBar = () => {
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-orange-600">
             <a
+              target="_blank"
               href="https://github.com/ATLora"
               className="flex justify-between items-center w-full text-gray-300"
             >
@@ -113,6 +115,7 @@ const NavBar = () => {
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-green-500">
             <a
+              target="_blank"
               href="https://www.upwork.com/freelancers/~01626702684e4c874d"
               className="flex justify-between items-center w-full text-gray-300"
             >
@@ -121,6 +124,7 @@ const NavBar = () => {
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-cyan-600">
             <a
+              target="_blank"
               href="mailto: lora.david2096@gmail.com"
               className="flex justify-between items-center w-full text-gray-300"
             >
@@ -129,6 +133,7 @@ const NavBar = () => {
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 bg-gray-500">
             <a
+              target="_blank"
               href={CV}
               download
               className="flex justify-between items-center w-full text-gray-300"

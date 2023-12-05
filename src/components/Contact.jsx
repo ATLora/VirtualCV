@@ -42,7 +42,7 @@ const Contact = () => {
           placeholder="Message"
         ></textarea>
         <button
-          className={`text-white border-2 hover:bg-[${ACCENT}] hover:border-[${ACCENT}] hover:scale-110 px-4 py-3 my-8 mx-auto flex items-center duration-300`}
+          className={`text-white border-2 hover:bg-[#D02F2F] hover:border-[#D02F2F] hover:scale-110 px-4 py-3 my-8 mx-auto flex items-center duration-300`}
         >
           Let's Collaborate
         </button>

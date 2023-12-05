@@ -14,7 +14,7 @@ const Skills = () => {
             Skills
           </p>
           <p className="sm:text-xl py-4">
-            <span className={`text-[#6E1414]`}>//</span> this are the
+            <span className={`text-[#6E1414]`}>//</span> This are the
             technologies in experience with
           </p>
         </div>
